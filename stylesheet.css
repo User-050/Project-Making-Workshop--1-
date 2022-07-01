@@ -1,0 +1,190 @@
+body {
+    font-family: "Avenir Next";
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .header {
+    background-color: #26d0c9;
+    color: #fff;
+    height: 90px;
+  }
+  
+  .header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+  }
+  
+  .header-list li {
+    float: left;
+    padding: 33px 20px;
+  }
+
+  .copy-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    left:780px;
+    border: 2px solid #34737D;
+    top:60px;
+  }
+
+  .copy-container h2{
+    font-size:40px;
+    color:#2f5167;
+    position:relative;
+    width:400px;
+    height:10px;
+  }
+
+  .copy-container h3{
+    font-size:25px;
+    color:#2f5167;
+    position:relative;
+    width:400px;
+    height:20px;
+    padding-left:380px;
+  
+  }
+
+  .copy-container img,h2{
+    display:inline-block;
+  }
+  
+  .contents {
+    height: 1400px;
+    margin-top:10px;
+  }
+  
+  .section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+  }
+  
+  .contents-item {
+    float: left;
+    margin-right: 40px;
+    width:500px;
+  }
+  
+  .contents-item p {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  
+  .contact-form {
+    padding-left: 100px;
+  } 
+  
+  .contact-submit {
+    background-color: #dee7ec;
+    color: #889eab;
+  }
+  
+  input,textarea {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+  }
+  
+  .footer {
+    background-color: #2f5167;
+    color: #fff;
+    height: 120px;
+    padding: 40px;
+  }
+  
+  .footer-logo {
+    float: left;
+    font-size: 32px;
+  }
+  
+  .footer-list {
+    float: right;
+  }
+  
+  .footer-list li {
+    padding-bottom: 20px;
+  }
+  
+  /*padding for whole body */
+  body {
+    padding: 15px;
+  } 
+  
+   styling body
+   .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+   
+  h1 {
+    color:rgb(51, 76, 134);
+    padding-left:15px;
+  }
+  
+  /* anchor tag decoration */
+  a {
+    text-decoration: none;
+    color: #5475d6;
+  }
+  
+  a:hover {
+    color: lightblue;
+  }
+  
+  /* row and column decoration */
+  .row {
+    margin: 0px -18px;
+    padding: 8px;
+  }
+  
+  /* gives spaces between the boxes*/
+  .row > .column { 
+    padding: 6px;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* gives spacing after the hobbies section */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* content decoration */
+  .content {
+    background-color: rgb(185, 223, 240);
+    padding: 10px;
+    border: 1px solid gray;
+  }
+  
+  /* window size 850 width set */
+  @media screen and (max-width: 850px) {
+    .column {
+      width: 50%;
+    }
+  } 
+
+  .container_2{
+    height:500px;
+    padding-left:15px;
+  }
+
+ .container_3{
+    padding-top:300px;
+    padding-left:15px;
+ }
