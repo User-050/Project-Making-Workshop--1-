@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
+    </head>
+
+    <body>
+        <%- include('header'); %>
+        <div class="main">
+            <div class="copy-container">
+                <h2>POSTED MESSAGES<span>.</span></h2>
+                <% msgs.forEach((msg)=>{ if(msg.msgg==='--NIL--'){ %>
+                        <p>--NIL--</p>
+                    <% } else { %>
+                        <p>
+                            <%= msg.id+". User Name: "+msg.usrnm+" , Email:  "+msg.eml %><br>
+                            <%= " Message:"+msg.msgg %>
+                        </p>
+                    <% } %>
+                <% }); %>
+            </div>
+
+            <div class="contact-form">
+                <form action="/cnct" method="post">
+                    <h3 class="section-title">Contact us</h3>
+                    <p>User Name (Required)</p>
+                    <input type="text" name="usrnm">
+                    <p>Email (Required)</p>
+                    <input type="text" name="eml">
+                    <p>Message (Required)</p>
+                    <textarea type="text" name="msg"></textarea>
+                    <p>* Required fields must be filled</p>
+                    <input class="contact-submit" type="submit" value="Send">
+                </form>
+            </div>
+        </div>        
+    </body>
+</html>

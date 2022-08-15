@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
+    </head>
+
+    <body>
+        <%- include('header'); %>
+
+        <div class="main">
+            <div class="copy-container">
+                <h2>HELLO VIEWERS<span>.</span></h2>
+                <h3>This Is About Myself</h3>
+            </div>
+
+            <div class="contents">
+                <h3 class="section-title">Programming Languages I Learnt</h3>
+                <% lngs.forEach((lng)=>{ %>
+                <div class="contents-item">
+                    <p><a href="/lang/<%= lng.id %>"><%= lng.nm %></a></p>
+                    <img src="<%= lng.img %>">
+                </div>
+                <% }); %>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-logo">Portfolio</div>
+            <div class="footer-list">
+                <ul>
+                    <li><a href="/prog">Programming</a></li>
+                    <li><a href="/cnct">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

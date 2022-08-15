@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
+    </head>
+
+    <body>
+        <%- include('header'); %>
+        <div class="main">
+            <div class="contents">
+                <h3 class="section-title">Programming Languages I Learnt</h3>
+                <% lngs.forEach((lng)=>{ %>
+                <div class="contents-item">
+                    <p><a href="/lang/<%= lng.id %>"><%= lng.nm %></a></p>
+                    <img src="<%= lng.img %>">
+                </div>
+                <% }); %>
+            </div>
+        </div>
+    </body>
+</html>
